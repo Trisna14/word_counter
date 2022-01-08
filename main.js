@@ -5,11 +5,12 @@ function atLeastTwoCharacters (text) {
    
     // console.log(letters);
     // console.log(letters.length); 
-    console.log('this is atLeastTwoCharacters');
-    return letters.length >= 2;
+    // console.log('this is atLeastTwoCharacters');
+    return letters.length > 0;
 
 }
 
+// menentukan apakah kalimat atau bukan
 function abscenceOfThreeConsecutiveCharacters (text) {
 
     for (const character of text) {
@@ -18,11 +19,13 @@ function abscenceOfThreeConsecutiveCharacters (text) {
 
         // console.log(occurrences);
         if (occurrences >= 3) {
+            console.log(occurrences);
+            console.log('return false');
             return false;
         }
 
         console.log('this is abscenceOfThreeConsecutiveCharacters');
-        console.log(occurrences);
+        // console.log(occurrences);
     }
 
     return true;
